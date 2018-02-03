@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 01 Feb 2018 pada 18.42
+-- Generation Time: 03 Feb 2018 pada 08.55
 -- Versi Server: 10.1.28-MariaDB
 -- PHP Version: 7.0.25
 
@@ -29,17 +29,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `kendaraan` (
-  `id` int(5) NOT NULL,
-  `kode_kendaraan` varchar(5) NOT NULL
+  `id_kendaraan` varchar(5) NOT NULL,
+  `kode_kendaraan` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `kendaraan`
 --
 
-INSERT INTO `kendaraan` (`id`, `kode_kendaraan`) VALUES
-(1, 'awdaw'),
-(2, 'awda');
+INSERT INTO `kendaraan` (`id_kendaraan`, `kode_kendaraan`) VALUES
+('K001', 'Bus Bisnis'),
+('K002', 'Bus Ace');
 
 -- --------------------------------------------------------
 
@@ -52,15 +52,8 @@ CREATE TABLE `tb_spiner` (
   `nama` varchar(50) NOT NULL,
   `lng` double NOT NULL,
   `lat` double NOT NULL,
-  `kendaraan` varchar(50) NOT NULL
+  `id_kendaraan` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tb_spiner`
---
-
-INSERT INTO `tb_spiner` (`id`, `nama`, `lng`, `lat`, `kendaraan`) VALUES
-(5, 'Tasikmalaya', 108.202972, -7.319563, 'com.example.rrifafauzikomara.spinnerjava2.Data@1f5');
 
 --
 -- Indexes for dumped tables
@@ -70,29 +63,24 @@ INSERT INTO `tb_spiner` (`id`, `nama`, `lng`, `lat`, `kendaraan`) VALUES
 -- Indexes for table `kendaraan`
 --
 ALTER TABLE `kendaraan`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_kendaraan`);
 
 --
 -- Indexes for table `tb_spiner`
 --
 ALTER TABLE `tb_spiner`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_kendaraan` (`id_kendaraan`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `kendaraan`
---
-ALTER TABLE `kendaraan`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT for table `tb_spiner`
 --
 ALTER TABLE `tb_spiner`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

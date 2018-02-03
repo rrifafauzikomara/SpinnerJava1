@@ -2,7 +2,7 @@
 
 	 include_once "koneksi.php";
 
-	 $query = mysqli_query($con, "SELECT * FROM kendaraan ORDER BY id ASC");
+	 $query = mysqli_query($con, "SELECT * FROM kendaraan ORDER BY id_kendaraan ASC");
 	
 	 $json = array();	
 	
