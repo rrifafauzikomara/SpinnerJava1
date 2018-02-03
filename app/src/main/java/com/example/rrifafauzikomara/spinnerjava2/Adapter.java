@@ -49,12 +49,12 @@ public class Adapter extends BaseAdapter {
         if (convertView == null)
             convertView = inflater.inflate(R.layout.list_idkendaraan, null);
 
-        TextView pendidikan = (TextView) convertView.findViewById(R.id.id_kendaraan);
+        TextView kendaraan = convertView.findViewById(R.id.id_kendaraan);
 
         Data data;
         data = item.get(position);
 
-        pendidikan.setText(data.getId());
+        kendaraan.setText(data.getId());
 
         return convertView;
     }

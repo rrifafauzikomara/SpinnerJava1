@@ -5,14 +5,13 @@ package com.example.rrifafauzikomara.spinnerjava2;
  */
 
 public class Data {
-    private String id_kendaraan, kode_kendaraan;
+    private String id_kendaraan;
 
     public Data() {
     }
 
-    public Data(String id_kendaraan, String kode_kendaraan) {
+    public Data(String id_kendaraan) {
         this.id_kendaraan = id_kendaraan;
-        this.kode_kendaraan = kode_kendaraan;
     }
 
     public String getId() {
@@ -21,14 +20,6 @@ public class Data {
 
     public void setId(String id_kendaraan) {
         this.id_kendaraan = id_kendaraan;
-    }
-
-    public String getKendaraan() {
-        return kode_kendaraan;
-    }
-
-    public void setKendaraan(String kendaraan) {
-        this.kode_kendaraan = kendaraan;
     }
 
 }

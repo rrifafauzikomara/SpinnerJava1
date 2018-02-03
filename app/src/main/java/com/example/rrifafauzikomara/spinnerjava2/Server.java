@@ -5,5 +5,5 @@ package com.example.rrifafauzikomara.spinnerjava2;
  */
 
 public class Server {
-    public static final String URL = "http://192.168.1.101/latihan/";
+    public static final String URL = "http://192.168.20.110/latihan1/";
 }
