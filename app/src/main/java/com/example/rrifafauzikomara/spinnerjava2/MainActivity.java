@@ -41,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private String url = Server.URL + "spiner.php";
     private String urls = Server.URL + "menu.php";
     private static final String TAG = MainActivity.class.getSimpleName();
-    public static final String TAG_ID = "id";
-    public static final String TAG_KENDARAAN = "kode_kendaraan";
+    public static final String TAG_ID = "id_kendaraan";
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
     String tag_json_obj = "json_obj_req";
@@ -195,7 +194,6 @@ public class MainActivity extends AppCompatActivity {
                                 JSONObject obj = response.getJSONObject(i);
                                 Data item = new Data();
                                 item.setId(obj.getString(TAG_ID));
-                                item.setKendaraan(obj.getString(TAG_KENDARAAN));
                                 listKendaraan.add(item);
                             } catch (JSONException e) {
                                 e.printStackTrace();
