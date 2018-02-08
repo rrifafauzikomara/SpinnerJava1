@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:\Materi\D4 Teknik Informatika\Semester 4\Mobile Programming\BackUp\SpinnerJava1\Spinner-Java.iml" filepath="D:\Materi\D4 Teknik Informatika\Semester 4\Mobile Programming\BackUp\SpinnerJava1\Spinner-Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpinnerJava1.iml" filepath="$PROJECT_DIR$/SpinnerJava1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\Materi\D4 Teknik Informatika\Semester 4\Mobile Programming\BackUp\SpinnerJava1\app\app.iml" filepath="D:\Materi\D4 Teknik Informatika\Semester 4\Mobile Programming\BackUp\SpinnerJava1\app\app.iml" />
     </modules>
   </component>
 </project>
