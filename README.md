@@ -1,6 +1,6 @@
 # Spinner-Java
 Simple project android for display data from database mysql into spinner and sending data from spinner into database mysql
 
-
-<img src="Screenshot_1.png" width="711" height="400">
-<img src="Screenshot_2.png" width="400" height="711">
+<pre>
+<img src="Screenshot_1.png" width="444" height="2500">      <img src="Screenshot_2.png" width="250" height="444">
+</pre>
